@@ -1,6 +1,19 @@
 # tbrain_2023_fall_sinopac_house_price_prediction
 the 4th place solution for 2023 fall Sinopac bank House Price prediction
 
+# 訓練方式
+
+![alt text](images/training.png)
+
+結構很簡單，主要是處理外部資料，跟做一些特徵工程，處理實價登錄的邏輯在utilt_land裡面，特徵工程主要有兩個管道流程(piepline)
+## External Pipeline
+![alt text](images/external_pipeline.png)
+外部管道處理外部資料的特徵工程，裡面的處理單元可以在etl_tool裡面看到
+
+## Internal Pipeline
+![alt text](images/internal_pipeline.png)
+內部管道處理在切割訓練驗證集需要考慮的特徵
+
 # 設定
 
 ## 加入input資料夾
